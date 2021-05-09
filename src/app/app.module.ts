@@ -7,18 +7,22 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { ArticleComponent } from './article/article.component';
+import { MarkdownModule } from "ngx-markdown";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
