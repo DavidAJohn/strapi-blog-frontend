@@ -9,13 +9,15 @@ import { NavComponent } from './nav/nav.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleComponent } from './article/article.component';
 import { MarkdownModule } from "ngx-markdown";
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ArticlesComponent,
-    ArticleComponent
+    ArticleComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
